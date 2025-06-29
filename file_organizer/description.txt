@@ -1,0 +1,12 @@
+goal: create a program that automatically sorts files in a folder into subfolders based on file type
+
+steps:
+choose target folder;
+decide about file categories;
+
+how to do that?
+how should i get all files in a directory?
+how to ignore subfolders?
+how to filter?
+how to check extension?
+how to move files from folder to subfolders?
