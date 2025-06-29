@@ -8,4 +8,3 @@ if __name__ == "__main__":
     upgrade.add_task(task_list[1])
 
     upgrade.show()
-

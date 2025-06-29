@@ -1,5 +1,3 @@
-
-
 def create_amount_per_day(all_transactions):
     date = str(input("Введите дату в следующем формате '01.01.2001'\n"))
     transaction_list = []
@@ -10,4 +8,3 @@ def create_amount_per_day(all_transactions):
     for item in transaction_list:
         sum_value = sum_value + item
     return sum_value
-

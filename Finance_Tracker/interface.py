@@ -5,4 +5,4 @@ def create_interface():
     print("4. show amount for a specific day.")
     print("5. show amount, for a certain category ")
     print("6. exit program")
-    return()
+    return ()

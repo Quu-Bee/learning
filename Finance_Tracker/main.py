@@ -9,10 +9,10 @@ value_list = []
 value_sum = 0
 options = {
     1: lambda: all_transactions.append(add_new_transaction()),
-    2: lambda: print(all_transactions) ,
-    3: lambda: print(transaction_sum(all_transactions)) ,
-    4: lambda: print(create_amount_per_day(all_transactions)) ,
-    5: lambda: print(create_amount_per_category(all_transactions)) ,
+    2: lambda: print(all_transactions),
+    3: lambda: print(transaction_sum(all_transactions)),
+    4: lambda: print(create_amount_per_day(all_transactions)),
+    5: lambda: print(create_amount_per_category(all_transactions)),
 }
 
 create_interface()
@@ -24,9 +24,9 @@ while (x := int(input())) != 6:
     create_interface()
 
     # if x == 1:
-    #all_transactions.append(add_new_transaction())
+    # all_transactions.append(add_new_transaction())
     #     pass
-    # elif x == 2:#     
+    # elif x == 2:#
     #     print(all_transactions)
     # elif x == 3:
     #     print(transaction_sum(all_transactions))
@@ -37,4 +37,3 @@ while (x := int(input())) != 6:
     # elif x == 6:
     #     exit()
     # else:
-

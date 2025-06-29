@@ -7,6 +7,7 @@ from load_dotenv import load_dotenv
 
 load_dotenv()
 
+
 class WeatherBot:
     def __init__(self):
         self.weather_logger = setup_logger()
@@ -26,5 +27,6 @@ class WeatherBot:
     async def send_daily_weather(self, context: CallbackContext):
         """Автоматическая отправка погоды в группу"""
         weather_text = get_current_weather(os.getenv("CITY"), os.getenv("API_KEY"))
-        await context.bot.send_message(chat_id=os.getenv("GROUP_CHAT_ID"), text=weather_text)
-
+        await context.bot.send_message(
+            chat_id=os.getenv("GROUP_CHAT_ID"), text=weather_text
+        )

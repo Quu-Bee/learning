@@ -2,6 +2,7 @@ from telegram.ext import Application, CommandHandler
 from setup_weather_logger import setup_logger
 import datetime
 from weather_bot import WeatherBot
+
 weather_logger = setup_logger()
 weather_logger.info("The bot has been launched")
 
@@ -24,4 +25,3 @@ if __name__ == "__main__":
         days=(0, 1, 2, 3, 4, 5, 6),
     )
     application.run_polling()
-

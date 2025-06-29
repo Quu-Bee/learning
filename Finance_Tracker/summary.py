@@ -1,5 +1,3 @@
-
-
 def transaction_sum(all_transactions):
     value_sum = 0
     value_list = []

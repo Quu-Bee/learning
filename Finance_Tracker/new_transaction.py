@@ -1,5 +1,4 @@
-
-def add_new_transaction():   
+def add_new_transaction():
     transaction = {}
     date = str(input("Enter the transaction date \n"))
     transaction.update({"date": date})
@@ -8,4 +7,3 @@ def add_new_transaction():
     category = str(input("Enter the transaction category \n"))
     transaction.update({"category": category})
     return transaction
-

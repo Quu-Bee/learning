@@ -1,5 +1,3 @@
-
-
 def create_amount_per_category(all_transactions):
     category = str(input("Введите категорию:'\n"))
     transaction_list = []

@@ -4,7 +4,7 @@ import shutil
 from pathlib import Path
 from filter_file import filter_files
 
-with open('C:/Users/Я/Documents/Sanya_IT/file_organizer/filters.json', 'r') as f:
+with open("C:/Users/Я/Documents/Sanya_IT/file_organizer/filters.json", "r") as f:
     subfolder_filter = json.load(f)
 
 all_extentions = [ext for extentions in subfolder_filter.values() for ext in extentions]
@@ -29,5 +29,3 @@ for category, file_name in categorized_files.items():
             source = f"C:/Users/Я/Downloads/{file}"
             destination_folder = f"C:/Users/Я/Downloads/{category}/{file}"
             shutil.move(source, destination_folder)
-
-
